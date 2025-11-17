@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaimStudio</title>
+    <!-- Google Fonts - რადგან სტანდარტული შრიფტები მოსაწყენი იყო -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ვიდეო ფონი - CSS-ით ვცადე მაგრამ video უკეთესი გამოვიდა -->
+    <video class="video-background" autoplay muted loop>
+        <source src="img/background.mp4" type="video/mp4">
+        თქვენი ბრაუზერი არ უჭერს მხარს ვიდეოს
+    </video>
+
+    <!-- თავი - ლოგოს გასწორება -->
+    <header>
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo-mask">
+                    <img src="img/logo.png" alt="SaimStudio Logo" class="logo-img">
+                </div>
+                <div class="title-container">
+                    <h1 class="studio-title">Saim<span>Studio</span></h1>
+                    <h3 class="studio-subtitle">თქვენი წინამძღოლი ციფრულ სამყაროში</h3>
+                </div>
+            </div>
+            
+            <!-- ნავიგაცია - მარტივი ამოხსნა მაგრამ მუშაობს -->
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link active">მთავარი</a>
+                <a href="contact.html" class="nav-link">კონტაქტი</a>
+            </nav>
+        </div>
+        
+        <!-- სინათლის ზოლი - დინამიკისთვის დავამატეთ -->
+        <div class="light-trail"></div>
+    </header>
+
+    <main>
+        <!-- 1. რა არის Frontend დეველოპმენტი - პირველი ბლოკი -->
+        <section class="slideshow">
+            <div class="slide active">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h2>რა არის Frontend დეველოპმენტი?</h2>
+                    <p>როდესაც თქვენ ხსნით რაიმე საიტს, რასაც თქვენ ხედავთ, აკლიკებთ თუ აკეთებთ რაიმე ინტერაქციას ვებ-გვერდთან ეს ყველაფერი წარმოადგენს Frontend დეველოპმენტის შედეგს.
+Frontend დეველოპმენტი პასუხისმგებელია ვებ-გვერდის ყველა იმ ნაწილზე, რომელთანაც მომხმარებელი შედის ინტერაქციაში, საიტის ფერი, დიზაინი, შრიფტი, ელემენტების განლაგება და კიდევ მრავალი სხვა.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. ჩვენი ტექნოლოგიები - ბარათები flip ეფექტით -->
+        <section class="tech-section">
+            <h2 class="section-title">ჩვენი ტექნოლოგიები</h2>
+            <div class="tech-grid">
+                <!-- HTML5 ბარათი -->
+                <div class="double-sided-card">
+                    <div class="card-inner">
+                        <div class="card-front html-front">
+                            <div class="card-content">
+                                <div class="tech-icon">
+                                    <img src="img/html.png" alt="HTML5" class="tech-img">
+                                </div>
+                                <h3>HTML5</h3>
+                                <p>სემანტიკური მარკირება</p>
+                                <div class="card-badge">სტრუქტურა</div>
+                            </div>
+                        </div>
+                        <div class="card-back html-back">
+                            <div class="card-content">
+                                <h3>HTML5</h3>
+                                <p>თანამედროვე სემანტიკური ტეგები უკეთესი ხელმისაწვდომობისა და SEO-სთვის</p>
+                                <div class="features">
+                                    <span>სემანტიკა</span>
+                                    <span>ხელმისაწვდომობა</span>
+                                    <span>SEO</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CSS3 ბარათი -->
+                <div class="double-sided-card">
+                    <div class="card-inner">
+                        <div class="card-front css-front">
+                            <div class="card-content">
+                                <div class="tech-icon">
+                                    <img src="img/css.png" alt="CSS3" class="tech-img">
+                                </div>
+                                <h3>CSS3</h3>
+                                <p>ადაფტიური დიზაინი</p>
+                                <div class="card-badge">სტილი</div>
+                            </div>
+                        </div>
+                        <div class="card-back css-back">
+                            <div class="card-content">
+                                <h3>CSS3</h3>
+                                <p>Flexbox, Grid და თანამედროვე ანიმაცია განსაცვიფრებელი UX-ისთვის</p>
+                                <div class="features">
+                                    <span>Flexbox</span>
+                                    <span>Grid</span>
+                                    <span>ანიმაცია</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- JavaScript ბარათი -->
+                <div class="double-sided-card">
+                    <div class="card-inner">
+                        <div class="card-front js-front">
+                            <div class="card-content">
+                                <div class="tech-icon">
+                                    <img src="img/java.png" alt="JavaScript" class="tech-img">
+                                </div>
+                                <h3>JavaScript</h3>
+                                <p>ინტერაქტიულობა</p>
+                                <div class="card-badge">ლოგიკა</div>
+                            </div>
+                        </div>
+                        <div class="card-back js-back">
+                            <div class="card-content">
+                                <h3>JavaScript</h3>
+                                <p>დინამიური ქცევა და თანამედროვე ფრეიმვორკები</p>
+                                <div class="features">
+                                    <span>ES6+</span>
+                                    <span>ფრეიმვორკები</span>
+                                    <span>API</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. ჩვენი ნამუშევრები - წრიული კარუსელი -->
+        <section class="circular-carousel-section" id="carousel-section">
+            <h2 class="section-title">ჩვენი ნამუშევრები</h2>
+            <div class="circular-carousel">
+                <div class="carousel-container">
+                    <span><img src="img/namushevari1.png" alt="ნამუშევარი 1"></span>
+                    <span><img src="img/namushevari2.png" alt="ნამუშევარი 2"></span>
+                    <span><img src="img/namushevari3.png" alt="ნამუშევარი 3"></span>
+                    <span><img src="img/namushevari4.png" alt="ნამუშევარი 4"></span>
+                    <span><img src="img/namushevari5.png" alt="ნამუშევარი 5"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. დამატებითი ტექსტი - აქაც იგივე გაფორმება როგორც ზემოთ -->
+        <section class="additional-section">
+            <div class="additional-slide">
+                <div class="slide-overlay"></div>
+                <div class="additional-content">
+                    <p>Frontend დეველოპმენტი კრეატიულობისა და ტექნიკური უნარების საინტერესო შერწყმაა. თუ გატაცებული ხართ დიზაინით, გიყვართ პრობლემების გადაჭრა ან უბრალოდ გსიამოვნებთ, როცა ყველაფერი იდეალურად მუშაობს, ფრონტენდი გთავაზობთ უსაზღვრო შესაძლებლობებს, შექმნათ მნიშვნელოვანი და მომხმარებელზე მორგებული გამოცდილებები. თუ მზად ხართ, ჩაეფლოთ ვებ დეველოპმენტის სამყაროში, დაიწყეთ საფუძვლებიდან, იმუშავეთ პროექტებზე და დაინახეთ, სად მიგიყვანთ თქვენი ცნობისმოყვარეობა!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. ტექნოლოგიების სტეკი - 3D კუბი -->
+        <section class="cube-section">
+            <h2 class="section-title">ჩვენი ტექნოლოგიების სტეკი</h2>
+            <div class="container">
+                <div class="box-card">
+                    <div class="face front">HTML5</div>
+                    <div class="face back">CSS3</div>
+                    <div class="face right">JavaScript</div>
+                    <div class="face left">TypeScript</div>
+                    <div class="face top">Angular</div>
+                    <div class="face bottom">შრომა</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 SaimStudio. ყველა უფლება დაცულია.</p>
+        </div>
+    </footer>
+</body>
+</html>
